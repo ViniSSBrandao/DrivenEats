@@ -26,6 +26,15 @@ h4{
     font-size: 16px;
     font-weight: 700;
     color:#333333;
+    font-family: 'roboto';
+    margin-top: 8px;
+}
+
+h5{
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 300;
+    color:#a6a6a6;
 }
 
 body{
@@ -77,8 +86,6 @@ body{
     padding-left: 19px;
 }
 
-
-
 .prato{
     width: 172px;
     height: 216px;
@@ -106,7 +113,19 @@ body{
     background-color: white;
     position: fixed;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
+
+button{ /* consertar */
+    width: 364px;
+    height: 61px;
+    background-color: #cbcbcb;
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
 
 .block{
     height: 92px;
