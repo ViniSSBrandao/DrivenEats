@@ -1,0 +1,121 @@
+/* +++++++ELEMENTOS+++++++ */
+h1{
+    font-size: 44px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: -0.012em;
+    font-family: 'Righteous', cursive;
+}
+h2{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    line-height: 21px;
+    font-family: 'Righteous', cursive;
+}
+
+h3{
+    font-size: 23px;
+    margin-left: 19px;
+    letter-spacing: 0.018em;
+    font-weight: 400;
+    font-family: 'Righteous', cursive;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 700;
+    color:#333333;
+}
+
+body{
+   
+    background-color: #E5E5E5;
+}
+
+/* ++++++ELEMENTOS++++++ */
+
+
+/* ++++++CLASSES++++++ */
+
+/* Cabecalho */
+
+.user_options{
+    margin-top: 120px;
+}
+
+.header{
+    height: 91px;
+    width: 100%;
+    box-shadow:  0px 1px 10px rgba(0,0,0,.9);
+    background-color: #CF2B2B;
+    position: fixed;
+    top:0;
+}
+
+.Title{
+    padding-top: 8px;
+    display: flex;
+    margin-left: 21px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* CABECALHO */
+
+/**/
+
+
+
+.order_section{
+  
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    margin-bottom: 27px ;
+    margin-top: 17px;
+    padding-left: 19px;
+}
+
+
+
+.prato{
+    width: 172px;
+    height: 216px;
+    box-sizing: border-box;
+    margin-right: 16px;
+    background-color:white ;
+    border-radius: 9px;
+    padding-left: 15px;
+    padding-top: 18px;
+    padding-right: 13px;
+   
+}
+
+.prato img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+
+/* finalizacao do pedido */
+
+.order_finish{
+    height: 92px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    }
+
+.block{
+    height: 92px;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+}
+
+/* finalizacao do pedido */
+
+
+
+/* +++++++CLASSES+++++++ */

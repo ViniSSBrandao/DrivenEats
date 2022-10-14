@@ -46,3 +46,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.order_section::-webkit-scrollbar {
+	display: none;
+}
+
+.order_section{
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+  }
