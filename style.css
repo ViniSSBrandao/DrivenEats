@@ -11,7 +11,7 @@ h2{
     color: white;
     font-weight: 400;
     line-height: 21px;
-    font-family: 'Righteous', cursive;
+    font-family: 'roboto';
 }
 
 h3{
@@ -37,9 +37,21 @@ h5{
     color:#a6a6a6;
 }
 
+h6{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'roboto';
+    color: black;
+}
+
 body{
    
     background-color: #E5E5E5;
+}
+
+ion-icon{
+    width: 15.5px;
+    height: 15.5px;
 }
 
 /* ++++++ELEMENTOS++++++ */
@@ -60,6 +72,7 @@ body{
     background-color: #CF2B2B;
     position: fixed;
     top:0;
+    z-index: 3;
 }
 
 .Title{
@@ -72,9 +85,7 @@ body{
 
 /* CABECALHO */
 
-/**/
-
-
+/* Escolha do pedido */
 
 .order_section{
   
@@ -95,17 +106,50 @@ body{
     border-radius: 9px;
     padding-left: 15px;
     padding-top: 18px;
-    padding-right: 13px;
-   
+    padding-right: 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
+.check{
+    color:white;
+    position:relative;
+    left: 125px;
+    top: 15px;
+    background-color: #32B72F;
+    border-radius: 15px;
+    
+}
+
+.hide{
+    
+}
+/** renomear classe **/
+.teste{
+    width: 172px;
+    height: 216px;
+    box-sizing: border-box;
+    margin-right: 16px;
+    background-color:white ;
+    border-radius: 9px;
+    padding-left: 10px;
+    padding-top: 13px;
+    padding-right: 15px;
+    border: 5px solid #32B72F;
+}
+/** renomear classe **/
+
 .prato img{
-    width: 144px;
-    height: 87px;
+    width: 142px;
+    height: 86px;
     border-radius: 4px;
 }
 
+/* ESCOLHA DO PEDIDO */
+
 /* finalizacao do pedido */
+
 
 .order_finish{
     height: 92px;
