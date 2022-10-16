@@ -123,7 +123,7 @@ ion-icon{
 }
 
 .hide{
-    
+    display: none;
 }
 /** renomear classe **/
 .teste{
@@ -162,6 +162,8 @@ ion-icon{
     justify-content: center;
     }
 
+
+
 button{ /* consertar */
     width: 364px;
     height: 61px;
@@ -169,6 +171,10 @@ button{ /* consertar */
     color: white;
     border-radius: 50px;
     border: none;
+}
+
+.confirm{
+    background-color: #32B72F;
 }
 
 .block{
