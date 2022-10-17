@@ -1,6 +1,8 @@
 //selecionar prato principal//
 let prato_sel = null, bebida_sel = null, sobremesa_sel = null;
+const preco_gato = 24.95, preco_suco=6.99, preco_abacate=4.99;
 
+let pratos = `Gostaria de fazer um pedido: R$${preco_gato} \n- Prato: R$${preco_suco} \n- Bebida: R$${preco_abacate}\n- sobremesa: R$${preco_abacate} \nTotal: R$${+preco_gato+preco_suco+preco_abacate}`;
 function select_p(opt_p){
    
    
@@ -67,8 +69,18 @@ function select_s(opt_s){
 function realizar_pedido(){
    console.log('pedido atualizado')
    if((sobremesa_sel&&prato_sel&&bebida_sel)!==null){
-      element = document.querySelector('.order')
-      element.classList.add('confirm')
-      element.innerHTML = "Fechar pedido"
+      element = document.querySelector('.order');
+      element.classList.add('confirm');
+      element.innerHTML = "Fechar pedido";
+      $("a").attr("href", "https://wa.me/?text=");
    }
 }
+
+function message(nhu){
+   
+   console.log(pratos);
+   if((sobremesa_sel&&prato_sel&&bebida_sel)!==null){
+   window.open(encodeURI("https://wa.me/?text="+pratos));
+   }
+}
+
