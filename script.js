@@ -11,7 +11,7 @@ function select_p(opt_p){
    
    if(prato_sel !== null){
       prato_sel.classList.remove('teste');
-      check_b.classList.add('hide')
+      check_p.classList.add('hide')
       
    }
    
@@ -24,7 +24,7 @@ function select_p(opt_p){
    
    check = prato_sel.querySelector('.hide');
    check.classList.remove('hide');
-   check_b = check;
+   check_p = check;
 
    valor_p = prato_sel.querySelector('#preco').innerHTML;
    coms = prato_sel.querySelector('#nome').innerHTML;
@@ -74,7 +74,7 @@ function select_s(opt_s){
 
    if(sobremesa_sel !== null){
       sobremesa_sel.classList.remove('teste')
-      check_b.classList.add('hide')
+      check_s.classList.add('hide')
   
    }
    
@@ -83,7 +83,7 @@ function select_s(opt_s){
    
    check = sobremesa_sel.querySelector('.hide');
    check.classList.remove('hide');
-   check_b = check;
+   check_s = check;
 
 
    valor_s = sobremesa_sel.querySelector('#preco').innerHTML;
