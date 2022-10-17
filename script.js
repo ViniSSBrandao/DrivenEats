@@ -1,8 +1,10 @@
 //selecionar prato principal//
 let prato_sel = null, bebida_sel = null, sobremesa_sel = null;
-const preco_gato = 24.95, preco_suco=6.99, preco_abacate=4.99;
+const preco_sapato = 35.99, preco_gato = 24.95, preco_suco=6.99, preco_abacate=4.99; //valor dos pratos disponíveis
+let pratos;
+let valor_p, valor_b, valor_s; //valor dos pratos selecionados//
+let preco_b_f;
 
-let pratos = `Gostaria de fazer um pedido: R$${preco_gato} \n- Prato: R$${preco_suco} \n- Bebida: R$${preco_abacate}\n- sobremesa: R$${preco_abacate} \nTotal: R$${+preco_gato+preco_suco+preco_abacate}`;
 function select_p(opt_p){
    
    
@@ -18,8 +20,13 @@ function select_p(opt_p){
    console.log(opt_p);
    prato_sel = opt_p;
    
-   realizar_pedido()
+   valor_p = prato_sel.querySelector('#preco').innerHTML;
+   
+   valor_p = parseFloat(valor_p.replace(',' , '.'))
+   console.log(valor_p);
+   realizar_pedido();
     return prato_sel;
+
 
 }
 //selecionar prato principal//
@@ -39,6 +46,11 @@ function select_b(opt_b){
    opt_b.classList.toggle('teste');
    console.log(opt_b);
    bebida_sel = opt_b;
+   valor_b = bebida_sel.querySelector('#preco').innerHTML;
+   
+   valor_b = parseFloat(valor_b.replace(',' , '.'))
+   console.log(valor_b);
+   console.log(preco_b_f)
    realizar_pedido();
    return bebida_sel;
  
@@ -59,6 +71,10 @@ function select_s(opt_s){
    opt_s.classList.toggle('teste');
    sobremesa_sel = opt_s;
    console.log(opt_s);
+   valor_s = sobremesa_sel.querySelector('#preco').innerHTML;
+   
+   valor_s = parseFloat(valor_s.replace(',' , '.'))
+   console.log(valor_s);
    realizar_pedido();
    return sobremesa_sel;
    
@@ -72,7 +88,9 @@ function realizar_pedido(){
       element = document.querySelector('.order');
       element.classList.add('confirm');
       element.innerHTML = "Fechar pedido";
-      $("a").attr("href", "https://wa.me/?text=");
+      soma = valor_b+valor_p+valor_s
+      soma = soma.toFixed(2)
+      pratos = `Gostaria de fazer um pedido: \n- Prato: R$${valor_p} \n- Bebida: R$${valor_b}\n- sobremesa: R$${valor_s} \nTotal: R$${soma}`;
    }
 }
 
