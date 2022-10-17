@@ -5,6 +5,7 @@ h1{
     font-weight: 400;
     letter-spacing: -0.012em;
     font-family: 'Righteous', cursive;
+    
 }
 h2{
     font-size: 18px;
@@ -12,6 +13,7 @@ h2{
     font-weight: 400;
     line-height: 21px;
     font-family: 'roboto';
+    
 }
 
 h3{
@@ -42,6 +44,7 @@ h6{
     font-weight: 400;
     font-family: 'roboto';
     color: black;
+    
 }
 
 body{
@@ -112,6 +115,13 @@ ion-icon{
     flex-direction: column;
 }
 
+.dineros{
+position: relative;
+top: 30px;
+left: 0px;
+
+}
+
 .check{
     color:white;
     position: relative;
@@ -123,7 +133,7 @@ ion-icon{
 }
 
 .hide{
-    display: none;
+   display: none;
 }
 /** renomear classe **/
 .teste{
