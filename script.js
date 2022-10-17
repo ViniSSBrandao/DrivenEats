@@ -3,7 +3,7 @@ let prato_sel = null, bebida_sel = null, sobremesa_sel = null;
 const preco_sapato = 35.99, preco_gato = 24.95, preco_suco=6.99, preco_abacate=4.99; //valor dos pratos disponíveis
 let pratos;
 let valor_p, valor_b, valor_s; //valor dos pratos selecionados//
-let preco_b_f;
+let coms, bebs, doce;
 
 function select_p(opt_p){
    
@@ -21,7 +21,7 @@ function select_p(opt_p){
    prato_sel = opt_p;
    
    valor_p = prato_sel.querySelector('#preco').innerHTML;
-   
+   coms = prato_sel.querySelector('#nome').innerHTML;
    valor_p = parseFloat(valor_p.replace(',' , '.'))
    console.log(valor_p);
    realizar_pedido();
@@ -47,7 +47,7 @@ function select_b(opt_b){
    console.log(opt_b);
    bebida_sel = opt_b;
    valor_b = bebida_sel.querySelector('#preco').innerHTML;
-   
+   bebs = bebida_sel.querySelector('#nome').innerHTML;
    valor_b = parseFloat(valor_b.replace(',' , '.'))
    console.log(valor_b);
    console.log(preco_b_f)
@@ -72,7 +72,7 @@ function select_s(opt_s){
    sobremesa_sel = opt_s;
    console.log(opt_s);
    valor_s = sobremesa_sel.querySelector('#preco').innerHTML;
-   
+   doce = sobremesa_sel.querySelector('#nome').innerHTML;
    valor_s = parseFloat(valor_s.replace(',' , '.'))
    console.log(valor_s);
    realizar_pedido();
@@ -90,7 +90,7 @@ function realizar_pedido(){
       element.innerHTML = "Fechar pedido";
       soma = valor_b+valor_p+valor_s
       soma = soma.toFixed(2)
-      pratos = `Gostaria de fazer um pedido: \n- Prato: R$${valor_p} \n- Bebida: R$${valor_b}\n- sobremesa: R$${valor_s} \nTotal: R$${soma}`;
+      pratos = `Gostaria de fazer um pedido: \n- Prato: ${coms} \n- Bebida: ${bebs}\n- sobremesa: ${doce} \nTotal: R$${soma}`;
    }
 }
 
